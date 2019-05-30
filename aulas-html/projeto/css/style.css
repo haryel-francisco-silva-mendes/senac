@@ -1,0 +1,370 @@
+/* Estilo gerais dos elementos */
+
+::selection { background:rgb(195, 238, 250); color: rgb(27, 21, 21); text-shadow: none; }
+body{
+    
+    margin: 0px;
+    background: url(../img/topo.jpg);
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: repeat-x;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    
+    font-family: 'Fjalla one', sans-serif;
+    color: #ff9000;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: 'Fjalla one',sans-serif;
+    color: #ff9000;
+
+}
+/*========================================================================================*/
+
+/*Áreas de conteúdos*/
+#main{
+    width: 1366px;
+    margin: 0 auto;
+}
+
+#topo{
+    height:  255px;
+    width: 100%;
+}
+
+#conteudo{
+    width: 100%;
+}
+
+.parallax{
+    clear: both;
+    background-image: url(../img/fundo_1.jpg);
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#rodape{
+    clear: both;
+    width: 100%;
+    height: 130px;
+    background: #2e3e06;
+}
+
+/*==================================================================================*/
+
+/*Bloco de divisão*/
+
+.row{
+    clear: both;
+}
+
+.content{
+    margin: 14px;
+}
+.bloco12{
+    width: 100%;
+    float: left;
+}
+.bloco6{
+    width: 50%;
+    float: left;
+}
+.bloco4{
+    width: 33.3333333333%;
+    float: left;
+}
+.bloco8{
+    width: 66.6666666667%;
+    float: left;
+}
+.bloco3{
+    width: 25%;
+    float: left;
+}
+
+/*===============================================================================*/
+
+/*Área do rodapé*/
+
+#rodape-interno{
+    width: 1366px;
+    margin: 0 auto;
+}
+
+#social{
+    width: 34%;
+    float: left;
+}
+
+#social p{
+    margin-top: 30px;
+    color: #FFF;
+}
+#menu-inferior{
+    width: 66%;
+    float: left;
+}
+#menu-inferior ul{
+    margin-top: 50px;
+}
+#menu-inferior ul li{
+    list-style: none;
+    display: block;
+    width: 13%;
+    float: right;
+    text-align: center;
+    border-right: 1px solid #c4d25e;
+}
+#menu-inferior ul li:first-child{
+    border-right: 0px none;
+}
+#menu-inferior ul li a{
+    text-decoration: none;
+    color: #FFF;
+}
+#menu-inferior ul li a:hover{
+    color: #c4d25e;
+}
+
+/*==============================================================================*/
+
+/*Area do parallax*/
+
+#destaque{
+    width: 100%;
+    text-align: center;
+    margin-top: 170px;
+}
+
+#destaque h1{
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Courgette', cursive;
+    text-transform: none;
+    text-shadow: 1px 1px #000;
+}
+
+/*===============================================================================*/
+
+/*Area do topo*/
+
+#logo{
+    width: 34%;
+    height: 255px;
+    float: left;
+}
+
+#logo img{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+/*================================================================================*/
+
+/*menu de pesquisa e login*/
+
+#menus{
+    width: 66%;
+    height: 255px;
+    float: left;
+}
+
+#submenu{
+    width: 100%;
+    height: 115px;
+}
+
+#submenu nav{
+    float: right;
+    margin-top: 50px;
+    margin-right: 40px;
+}
+
+#submenu input{
+    padding: 5px;
+    color: #c4d25e;
+    font-family: 'Fjalla one', sans-serif;
+    font-size: 20px;
+    border: 0px none;
+    width: 200px;
+    background: url(../img/icn_search.png);
+    background-attachment: scroll;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-color: #627f11;
+    /*motores de renderização dos navegadores*/
+}#submenu input::-webkit-input-placeholder{
+    color: #7ca220;
+}
+#submenu input:-moz-placeholder{
+    color: #7ca220;
+}
+
+#submenu input:-ms-input-placeholder{
+    color: #7ca220;
+}
+/*focus é para quando haja interaçao do usuario a caixa de pesquisa aumente o tamanho*/
+#submenu input:focus{
+    width: 300px;
+}
+
+#submenu a{
+    padding: 5px;
+    color: #7ca220;
+    font-family: 'Fjalla one',sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#submenu a:hover{
+    color: #c4d25e;
+}
+
+#submenu span{
+    padding: 5px;
+    color: #c3d25e;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*====================================================================================*/
+/*menu principal*/
+
+
+
+#menu-principal{
+    width: 100%;
+    height: 140px;
+}
+
+#menu-principal nav ul li{
+    list-style: none;
+    float: left;
+    margin-right: 7px;
+    position: relative;
+    z-index: 5;
+}
+
+#menu-principal nav ul li a{
+    display: block;
+    width: 130px;
+    height: 128px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+}
+
+#regiao, #ficar, #comer, #chegar, #fazer, #cadastrar{
+    border-radius: 65px 65px 0px 0px;
+}
+
+.ultimo{
+    border-radius: 0px 0px 10px 10px;
+}
+
+#regiao{
+    background-image: url(../img/icn_regiao.png);
+}
+#regiao:hover{
+    background-image: url(../img/icn_regiao_hover.png);
+}
+.regiao_atual{
+    background-image: url(../img/icn_regiao_hover.png) !important;
+}
+
+#ficar{
+    background-image: url(../img/icn_ondeficar.png);
+}
+#ficar:hover{
+    background-image: url(../img/icn_ondeficar_hover.png);
+}
+.ficar-atual{
+    background-image: url(../img/icn_ondeficar_hover.png) !important;
+}
+
+#comer{
+    background-image: url(../img/icn_ondecomer.png);
+}
+#comer:hover{
+    background-image: url(../img/icn_ondecomer_hover.png);
+}
+.comer_atual{
+    background-image: url(../img/icn_ondecomer_hover.png) !important;
+}
+
+#fazer{
+    background-image: url(../img/icn_oquefazer.png);
+}
+#fazer:hover{
+    background-image: url(../img/icn_oquefazer_hover.png);
+}
+.fazer-atual{
+    background-image: url(../img/icn_oquefazer_hover.png) !important;
+}
+
+#chegar{
+    background-image: url(../img/inc_comochegar.png);
+}
+#chegar:hover{
+    background-image: url(../img/inc_comochegar_hover.png);
+}
+.chegar-atual{
+    background-image: url(../img/inc_comochegar_hover.png) !important;
+}
+
+#cadastrar{
+    background-image: url(../img/inc_cadastrese.png);
+}
+#cadastrar:hover{
+    background-image: url(../img/inc_cadastrese_hover.png);
+}
+.cadastrar-atual{
+    background-image: url(../img/inc_cadastrese_hover.png) !important;
+}
+
+/*--- Dropdown ---*/
+
+.mprincipal ul {
+    list-style: none;
+    position: absolute;
+    left: -9999px;
+}
+.mprincipal ul li {
+    padding-top: 0px;
+    float: none;
+    left: -40px;
+}
+.mprincipal ul a {
+    height: 20px !important;
+    white-space: nowrap;
+    border-bottom: 1px solid #ba6900;
+}
+
+.mprincipal li:hover ul {
+    left: 0;
+}
+.mprincipal li:hover a {
+    background-color: #ff9000;
+    text-decoration: underline;
+    text-align: center;
+    color: #FFF;
+    padding-top: 5px;
+    padding-bottom:5px;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.mprincipal li:hover ul a {
+    text-decoration: none;
+}
+.mprincipal li:hover ul li a:hover {
+    background-color: #dd7d00;
+}
+

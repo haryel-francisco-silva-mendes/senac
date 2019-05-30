@@ -1,0 +1,46 @@
+#main{
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.row{
+    clear: both;
+}
+
+.bloco12{
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+
+.bloco9{
+    width: 75%;
+    height: 400px;
+    float: left;
+    
+}
+
+.bloco3{
+    width: 25%;
+    height:400px;
+    float: left;
+}
+
+
+
+
+.vermelho{
+    background-color: red;
+}
+.azul{
+    background-color: blue;
+}
+.amarelo{
+    background-color: yellow;
+}
+.verde{
+    background-color: green;
+}
+.roxo{
+    background-color: blueviolet;
+}

@@ -1,0 +1,62 @@
+/*encapsulador geral*/
+#main{
+   width: 1366px;
+   margin: 0 auto;
+}
+/*elementos de esteticas*/
+.row{
+    clear: both;
+}
+/*alturas */
+.altura1{
+    height: 200px;
+}
+
+.altura2{
+    height: 300px;
+}
+
+.altura3{
+    height: 400px;
+}
+/*colunas*/
+.bloco12{
+    width: 100%;
+    float: left;
+}
+
+.bloco6{
+    width: 50%;
+    float: left;
+}
+
+.bloco5{
+    width: 41.6667%;
+    float: left;
+}
+
+.bloco2{
+    width: 16.6667%;
+    float: left;
+}
+/*cores do layout*/
+.vermelho{
+    background-color: red;
+}
+.laranja{
+    background-color: orange;
+}
+.preto{
+    background-color: black;
+}
+
+.roxo{
+    background-color: blueviolet;
+}
+.azul{
+    background-color: blue;
+}
+.amarelo{
+    background-color: yellow;
+}
+

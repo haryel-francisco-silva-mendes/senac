@@ -1,0 +1,576 @@
+body{
+    margin: 0px;
+    background: url(../img/topo.jpg);
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: repeat-x;
+    background-color: #FFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* General Styles */
+
+h1{
+    font-family: 'Fjalla One', sans-serif;
+    color: #ff9000;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: 'Fjalla One', sans-serif;
+    color: #ff9000;
+}
+
+/* Parallax */
+
+.parallax {
+    clear: both;
+    background-image: url("../img/fundo_1.jpg");
+    min-height: 400px; 
+
+    /* Efeito parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#destaque{
+    width: 100%;
+    text-align: center;
+    margin-top: 170px;
+}
+
+#destaque h1{
+    font-size: 50px;
+    color: #FFF;
+    font-family: 'Courgette', cursive;
+    text-transform: none;
+    text-shadow: 1px 1px #000; 
+}
+
+
+/* Principal */
+
+#main{
+    width: 1366px;
+    margin: 0 auto;
+}
+
+
+/* Header Styles */
+
+#topo{
+    height: 255px;
+    width: 100%;
+}
+
+#logo{
+    width: 34%;
+    height: 255px;
+    float: left;
+}
+
+#logo img{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+
+/* Nav Styles */
+
+#menus{
+    width: 66%;
+    height: 255px;
+    float: left;
+}
+
+#menumobile{
+    display: none;
+}
+
+#submenu{
+    width: 100%;
+    height: 115px;
+}
+
+#submenu nav{
+    float: right;
+    margin-top: 50px;
+    margin-right: 40px;
+}
+
+#submenu input{
+    padding: 5px;
+    color: #c4d25e;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    border: 0px none;
+    width: 200px;
+    background: url(../img/icn_search.png);
+    background-attachment: scroll;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-color: #627f11;
+}
+
+#submenu input::-webkit-input-placeholder {
+  color: #7ca220;
+}
+#submenu input::-moz-placeholder {
+  color: #7ca220;
+}
+#submenu input:-ms-input-placeholder {
+  color: #7ca220;
+}
+#submenu input:-moz-placeholder {
+  color: #7ca220;
+}
+
+#submenu input:focus{
+    width:300px;
+}
+
+#submenu a{
+    padding: 5px;
+    color: #7ca220;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#submenu a:hover{
+    color: #c4d25e;
+}
+
+#submenu span{
+    padding: 5px;
+    color: #c4d25e;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#menuprincipal{
+    width: 100%;
+    height: 140px;
+}
+
+#menuprincipal nav ul li{
+    list-style: none;
+    float: left;
+    margin-right: 7px;
+    position: relative;
+    z-index: 5;
+}
+
+#menuprincipal nav ul li a{
+    display: block;
+    width: 130px;
+    height: 128px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+}
+
+#regiao, #ficar, #comer, #chegar, #fazer, #cadastrar{
+    border-radius: 65px 65px 0px 0px;
+}
+
+.ultimo{
+    border-radius: 0px 0px 10px 10px;
+}
+
+#regiao{
+    background-image: url(../img/icn_regiao.png);
+}
+#regiao:hover{
+    background-image: url(../img/icn_regiao_hover.png);
+}
+.regiao_atual{
+    background-image: url(../img/icn_regiao_hover.png) !important;
+}
+
+#ficar{
+    background-image: url(../img/icn_ondeficar.png);
+}
+#ficar:hover{
+    background-image: url(../img/icn_ondeficar_hover.png);
+}
+.ficar_atual{
+    background-image: url(../img/icn_ondeficar_hover.png) !important;
+}
+
+#comer{
+    background-image: url(../img/icn_ondecomer.png);
+}
+#comer:hover{
+    background-image: url(../img/icn_ondecomer_hover.png);
+}
+.comer_atual{
+    background-image: url(../img/icn_ondecomer_hover.png) !important;
+}
+
+#fazer{
+    background-image: url(../img/icn_oquefazer.png);
+}
+#fazer:hover{
+    background-image: url(../img/icn_oquefazer_hover.png);
+}
+.fazer_atual{
+    background-image: url(../img/icn_oquefazer_hover.png) !important;
+}
+
+#chegar{
+    background-image: url(../img/inc_comochegar.png);
+}
+#chegar:hover{
+    background-image: url(../img/inc_comochegar_hover.png);
+}
+.chegar_atual{
+    background-image: url(../img/inc_comochegar_hover.png) !important;
+}
+
+#cadastrar{
+    background-image: url(../img/inc_cadastrese.png);
+}
+#cadastrar:hover{
+    background-image: url(../img/inc_cadastrese_hover.png);
+}
+.cadastrar_atual{
+    background-image: url(../img/inc_cadastrese_hover.png) !important;
+}
+
+
+/*--- Dropdown ---*/
+
+.mprincipal ul {
+    list-style: none;
+    position: absolute;
+    left: -9999px;
+}
+.mprincipal ul li {
+    padding-top: 0px;
+    float: none;
+    left: -40px;
+}
+.mprincipal ul a {
+    height: 20px !important;
+    white-space: nowrap;
+    border-bottom: 1px solid #ba6900;
+}
+
+.mprincipal li:hover ul {
+    left: 0;
+}
+.mprincipal li:hover a {
+    background-color: #ff9000;
+    text-decoration: underline;
+    text-align: center;
+    color: #FFF;
+    padding-top: 5px;
+    padding-bottom:5px;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.mprincipal li:hover ul a {
+    text-decoration: none;
+}
+.mprincipal li:hover ul li a:hover {
+    background-color: #dd7d00;
+}
+
+
+
+/* Content Styles */
+
+#conteudo{
+    width: 100%;
+}
+
+
+.row{
+    clear: both;    
+}
+
+.content{
+    margin: 10px;
+}
+
+.bloco12{
+    width: 100%;
+    float: left;
+}
+
+.bloco6{
+    width: 50%;
+    float: left;
+}
+
+.bloco4{
+    width: 33.3333333333%;
+    float: left;
+}
+
+.bloco8{
+    width: 66.6666666667%;
+    float: left;
+}
+
+.bloco3{
+    width: 25%;
+    float: left;
+}
+
+
+
+/* Footer Styles */
+
+#rodape{
+    clear: both;
+    width: 100%;
+    height: 130px;
+    background: #2e3e06;
+}
+
+#rodape_interno{
+    width: 1366px;
+    margin: 0 auto;
+}
+
+#social{
+    width: 34%;
+    float: left;
+}
+
+#social p{
+    margin-top: 30px;
+    color: #FFF;
+}
+
+#menuinferior{
+    width: 66%;
+    float: left;
+}
+
+#menuinferior ul{
+    margin-top: 50px; 
+}
+
+#menuinferior ul li{
+    list-style: none;
+    display: block;
+    width: 13%;
+    float: right;
+    text-align: center;
+    border-right: 1px solid #c4d25e;
+}
+
+#menuinferior ul li:first-child{
+    border-right: 0px none;
+}
+
+#menuinferior ul li a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+#menuinferior ul li a:hover{
+    color: #c4d25e;
+}
+
+
+/* 
+ Pra dispositivos que tem uma largura máxima de 767 pixels.
+*/
+@media screen and (max-width: 767px) {
+
+    #main{
+        width: 100%;
+    }
+
+    .bloco6, .bloco4, .bloco8, .bloco3{
+        width: 100%;
+    }
+    
+    .parallax {
+        background-image: url("../img/fundo_2.jpg");
+        background-position: left center;
+    }
+    
+    #destaque{
+        margin-top: 120px;
+    }
+    
+    #destaque h1{
+        font-size: 40px;
+    }
+    
+    
+    /* Rodapé Responsivo */
+    
+    #rodape{
+        height: 450px;
+    }
+
+    #rodape_interno{
+        width: 100%;
+    }
+    
+    #social{
+        width: 100%;
+        text-align: center;
+    }
+
+    #social p{
+        margin-top: 50px;
+    }
+
+    #menuinferior{
+        width: 100%;
+    }
+
+    #menuinferior ul{
+        margin-top: 30px; 
+    }
+
+    #menuinferior ul li{
+        display: block;
+        width: 100%;
+        float: none;
+        text-align: center;
+        border-right: 0px none;
+        border-bottom: 1px solid #c4d25e;
+        margin-left: -28px;
+        padding: 7px;
+    }
+
+    #menuinferior ul li:last-child{
+        border-bottom: 0px none;
+    }
+    
+    
+    /* Topo */
+    #logo{
+        max-height: 200px;
+        width: 100%;
+    }
+    
+    #logo img{
+        width: 70%;
+    }
+    
+    #menus{
+        display: none
+    }
+    
+    /* Menu Mobile */
+    
+    #menumobile{
+        width: 100%;
+        display: inline-block;
+    }
+
+    #topo{
+        height: 200px;
+    }
+    
+    .main-menu{
+        clear: both;
+        width: 100%;
+        height: 10px;
+        background-color: #ff9000;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        line-height: 35px;
+    }
+
+    #main-nav-check{
+        display: none;
+    }
+
+    #main-nav-check:checked ~ .main-menu {
+        transition: all 0.5s ease; 
+        overflow: none;
+        width: 100%;
+        height: 850px;
+    }
+    
+    label {
+        width: 100%;
+        display: inline-block;
+        background-color: #ff9000;
+        font-size:2.5em;
+        cursor:pointer;
+        height:52px;
+        color: #FFF;
+        clear: both;
+        padding-left: 10px;
+    }
+    
+    .main-menu ul{
+        color: #F30;
+        font-weight: bold;
+        width: 100%;
+        display: inline-block;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+    
+    .main-menu ul li{
+        width: 100%;
+        display: inline-block;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        list-style: none;
+    }
+    
+    .main-menu a{
+        text-decoration: none;
+        color: #FFF;
+        display: block;
+        background-color: #F90;
+    }
+    
+    .main-menu a:hover{
+        color: #F50;
+    }
+    
+    /* Ícone Menu Mobile */
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #FFF;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {opacity: 0;}
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
