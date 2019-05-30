@@ -1,0 +1,9 @@
+#Exemplo aula 4
+
+Nesa página foram colocados conceitos de:
+-conteiner de conteúdo (warpper)
+-alinhamentos usando display:flex
+
+```css
+.conteiner{width: 100%; max-width: 1280px; padding: 18px; margin: 0 auto;}
+```
