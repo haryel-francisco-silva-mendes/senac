@@ -28,3 +28,9 @@
 .amarelo{
     background-color: yellow;
 }
+
+/*media queries*/
+/*celular*/
+@media screen and (max-width: 479px){.bloco3{width: 100%;}}
+/*tablet*/
+@media screen and (max-width:1023px){.bloco3{width: 50%;}}
