@@ -1,0 +1,37 @@
+/*configuracao basica do site*/
+#main {width: 1333px; margin: 0px auto;}
+.row{clear: both;}
+/*blocos*/
+.bloco12{width: 100%;float: left;}
+.bloco9{width: 75%;float: left;}
+.bloco8{width: 66.6666666667%;float: left;}
+.bloco4{width: 33.333%;float: left;}
+.bloco3{width: 25%;float: left;}
+
+/*textos*/
+
+.row p{ width: auto;margin: 10px 20px;padding-left: 23px;}
+.row h2{text-align: center;}
+.row h1{text-align: center;} 
+/*baner*/
+#cabecalho{margin: -8px auto;}
+.baner{
+    background-size: cover;
+    background-image:url("../image/1.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    
+    height: 300px;   
+}
+.menu-principal ul{
+    list-style: none;
+    display: inline-flex; 
+    float: right;
+    margin-top: -90px;
+    margin-right: 20px;
+        
+}
+
+
+
