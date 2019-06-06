@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head lang="pt-br">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML 5 semantica</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <main>
+            <header>cabecalho</header>
+            <nav>Menu</nav>
+            <section id="formulario">
+                    <div class="row">
+                        <div class="bloco12">
+                            <h1>Formulario de Contato</h1>
+                            <p>Preencha o formulario abaixo</p>
+                            <form id="contato" method="get">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome" placeholder="nome">
+                                <label for="sobrenome">sobrenome</label>
+                                <input type="text" name="sobrenome" id="sobrenome">
+                                <label for="email">e-mail</label>
+                                <input type="email" name="email" id="email">
+                                <label for="telefone">telefone</label>
+                                <input type="tel" name="telefone" id="telefone">
+                                <label for="nascimento">data de nascimento</label>
+                                <input type="date" name="nascimento" id="nascimento">
+                                <input type="hidden" name="codigo" id="codigo" value="123456">
+                                <input type="submit" name="submit" id="submit" value="salvar">
+                            </form>
+
+                            <form id="newsletter"></form>
+                    </div>
+                </div>
+            </section>
+            <footer><div class="row"></div></footer>
+        </main>
+    </body>
+</html>
+<!--outros elementos de Estruturação-->
+    <!--
+        *article (artigos, historia de uma empresa)
+        *aside (é usado para dizer que eu  estou colocando um conteudo relacionado ao article)
+        *nav (para navegação)
+        *section (usado para separar as sessões)
+        *div (divisão e criação de estruturas)
+    -->
