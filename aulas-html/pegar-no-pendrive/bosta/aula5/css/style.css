@@ -1,0 +1,19 @@
+#main{width: 1366px;margin: 0px auto;}
+.row{clear: both;}
+
+/*blocos*/
+.bloco12{width: 100%;float: left;}
+.bloco8{ width: 66.66666%;float: left;}
+.bloco7{width: 58.33333%;float: left;}
+.bloco6{width: 50%; float: left;}
+.bloco5{width: 41.66666%;float: left;}
+.bloco4{width: 33.33333%;float: left;}
+
+/**/
+.cachaca img{
+    max-width: 100%;
+}
+   
+
+/*menu*/
+.menu-superior ul{list-style: none;}

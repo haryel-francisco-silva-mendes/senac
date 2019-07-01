@@ -1,0 +1,36 @@
+/*classe principal para definir a largura*/
+#main{ width: 1366px; margin: 0 auto;}
+/*linhas*/
+.row{ clear: both;}
+/*colunas*/
+.bloco12{width: 100%; float: left;}
+.bloco3{width: 25%; float: left;}
+/*alturas*/
+.altura200{height: 200px;}
+.altura400{height: 400px;}
+/*cores*/
+.vermelho{
+    background-color: red;
+}
+.laranja{
+    background-color: orange;
+}
+.preto{
+    background-color: black;
+}
+
+.roxo{
+    background-color: blueviolet;
+}
+.azul{
+    background-color: blue;
+}
+.amarelo{
+    background-color: yellow;
+}
+
+/*media queries*/
+/*celular*/
+@media screen and (max-width: 479px){.bloco3{width: 100%;}}
+/*tablet*/
+@media screen and (max-width:1023px){.bloco3{width: 50%;}}

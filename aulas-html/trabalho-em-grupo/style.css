@@ -1,0 +1,41 @@
+/*configuracao elementos*/
+#main{width: 1366px; margin: 0 auto;}
+.row{clear: both;}
+
+/*altura*/
+.altura1{height:300px;}
+.altura2{height: 150px;}
+/*blocos*/
+
+.bloco12,.bloco12a{width: 100%; float: left;}
+.bloco8{width: 66.667%; float: left;}
+.bloco6,.bloco6a{width: 50%; float: left;}
+.bloco4{width: 33.3333%; float: left;}
+.bloco3{width: 25%; float: left;}
+
+/*cores*/
+.vermelho{background-color: red;}
+
+.preto{background-color: rgb(150, 148, 148);}
+
+.verde{background-color: green;}
+
+.amarelo{background-color: yellow;}
+
+.roxo{background-color: blueviolet;}
+
+.azul{background-color: blue;}
+
+
+/*media queries*/
+@media screen and (max-width:478px){
+    #main{width: 100%;}
+
+    .bloco12a{width: 50%; float: left;}
+    .bloco8{width: 100%; float: left;}
+    .bloco6a{width: 50%; float: left;}
+    .bloco6{width: 100%; float: left;}
+    .bloco4{width:100%; float: left;}
+    .bloco3{width: 100%; float: left;}
+
+}
